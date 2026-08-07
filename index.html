@@ -40,11 +40,11 @@
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #f43f5e; /* Rose 500 */
+            background: #3b82f6; /* Blue 500 */
         }
     </style>
 </head>
-<body class="bg-[#0b0f19] text-slate-100 font-sans selection:bg-rose-500 selection:text-white">
+<body class="bg-[#0b0f19] text-slate-100 font-sans selection:bg-blue-500 selection:text-white">
 
     <!-- Navigation Header -->
     <nav class="fixed top-0 left-0 w-full z-50 bg-[#0b0f19]/80 backdrop-blur-md border-b border-slate-800/80">
@@ -52,28 +52,28 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-rose-400 to-red-400 bg-clip-text text-transparent">
+                    <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
                         Ben Wright
                     </span>
                 </div>
                 <!-- Desktop Navigation -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-center space-x-8">
-                        <a href="#about" class="text-slate-300 hover:text-rose-400 font-medium transition duration-150">About</a>
-                        <a href="#experience" class="text-slate-300 hover:text-rose-400 font-medium transition duration-150">Experience</a>
-                        <a href="#msc" class="text-slate-300 hover:text-rose-400 font-medium transition duration-150">MSc Journey</a>
-                        <a href="#companion" class="text-slate-300 hover:text-rose-400 font-medium transition duration-150 flex items-center gap-1.5">
-                            <span class="w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
-                            Healthcare Companion - Evie
+                        <a href="#about" class="text-slate-300 hover:text-blue-400 font-medium transition duration-150">About</a>
+                        <a href="#experience" class="text-slate-300 hover:text-blue-400 font-medium transition duration-150">Experience</a>
+                        <a href="#msc" class="text-slate-300 hover:text-blue-400 font-medium transition duration-150">MSc Journey</a>
+                        <a href="#companion" class="text-slate-300 hover:text-red-400 font-medium transition duration-150 flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                            Healthcare Companion
                         </a>
-                        <a href="#projects" class="text-slate-300 hover:text-rose-400 font-medium transition duration-150">Projects</a>
-                        <a href="#blog" class="text-slate-300 hover:text-rose-400 font-medium transition duration-150 font-semibold text-rose-400 bg-rose-950/40 px-3 py-1 rounded-full border border-rose-800/50">DevLog</a>
-                        <a href="#contact" class="bg-gradient-to-r from-rose-500 to-red-500 text-slate-900 font-bold px-4 py-2 rounded-lg hover:from-rose-400 hover:to-red-400 transition duration-150 shadow-md shadow-rose-500/10">Contact</a>
+                        <a href="#projects" class="text-slate-300 hover:text-blue-400 font-medium transition duration-150">Projects</a>
+                        <a href="#blog" class="text-slate-300 hover:text-blue-400 font-medium transition duration-150 font-semibold text-blue-400 bg-blue-950/40 px-3 py-1 rounded-full border border-blue-800/50">DevLog</a>
+                        <a href="#contact" class="bg-gradient-to-r from-blue-500 to-indigo-500 text-slate-900 font-bold px-4 py-2 rounded-lg hover:from-blue-400 hover:to-indigo-400 transition duration-150 shadow-md shadow-blue-500/10">Contact</a>
                     </div>
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" type="button" class="text-slate-400 hover:text-rose-400 focus:outline-none focus:text-rose-400" aria-controls="mobile-menu" aria-expanded="false">
+                    <button id="mobile-menu-btn" type="button" class="text-slate-400 hover:text-blue-400 focus:outline-none focus:text-blue-400" aria-controls="mobile-menu" aria-expanded="false">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -85,13 +85,13 @@
         <!-- Mobile Menu -->
         <div class="hidden md:hidden bg-[#0f172a] border-b border-slate-800" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
-                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-rose-400 hover:bg-slate-800 transition">About</a>
-                <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-rose-400 hover:bg-slate-800 transition">Experience</a>
-                <a href="#msc" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-rose-400 hover:bg-slate-800 transition">MSc Journey</a>
-                <a href="#companion" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-rose-400 hover:bg-slate-800 transition">Healthcare Companion - Evie</a>
-                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-rose-400 hover:bg-slate-800 transition">Projects</a>
-                <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium text-rose-400 hover:bg-slate-800 transition">DevLog</a>
-                <a href="#contact" class="block mx-auto w-11/12 bg-gradient-to-r from-rose-500 to-red-500 text-slate-900 font-bold px-4 py-2 rounded-lg transition mt-4">Contact</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-blue-400 hover:bg-slate-800 transition">About</a>
+                <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-blue-400 hover:bg-slate-800 transition">Experience</a>
+                <a href="#msc" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-blue-400 hover:bg-slate-800 transition">MSc Journey</a>
+                <a href="#companion" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-red-400 hover:bg-slate-800 transition">Healthcare Companion</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-blue-400 hover:bg-slate-800 transition">Projects</a>
+                <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium text-blue-400 hover:bg-slate-800 transition">DevLog</a>
+                <a href="#contact" class="block mx-auto w-11/12 bg-gradient-to-r from-blue-500 to-indigo-500 text-slate-900 font-bold px-4 py-2 rounded-lg transition mt-4">Contact</a>
             </div>
         </div>
     </nav>
@@ -99,22 +99,22 @@
     <!-- HERO SECTION -->
     <section class="relative pt-32 pb-24 md:pt-40 md:pb-36 overflow-hidden">
         <!-- Abstract glowing backgrounds -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-rose-500/10 rounded-full blur-[120px] pointer-events-none"></div>
-        <div class="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-red-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center">
                 <!-- Status Badge -->
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-rose-950/50 border border-rose-800/40 text-xs sm:text-sm text-rose-400 mb-6 font-medium">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-950/50 border border-blue-800/40 text-xs sm:text-sm text-blue-400 mb-6 font-medium">
                     <span class="flex h-2 w-2 relative">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                     </span>
                     MSc Data Science & AI Candidate @ Birkbeck Uni
                 </div>
 
                 <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-none mb-6">
-                    <span class="bg-gradient-to-r from-rose-400 via-pink-400 to-red-400 bg-clip-text text-transparent">Ben Wright</span>
+                    <span class="bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 bg-clip-text text-transparent">Ben Wright</span>
                 </h1>
 
                 <p class="text-lg sm:text-2xl font-semibold text-slate-300 max-w-3xl mx-auto mb-6">
@@ -126,8 +126,8 @@
                 </p>
 
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a href="#companion" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-rose-500 to-red-500 hover:from-rose-400 hover:to-red-400 text-slate-950 font-bold transition duration-150 transform hover:-translate-y-0.5 shadow-lg shadow-rose-500/20 text-center flex items-center justify-center gap-2">
-                        <i class="fa-solid font-bold fa-heart-pulse"></i> Evie Companion Tracker
+                    <a href="#companion" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-red-500 to-rose-500 hover:from-red-400 hover:to-rose-400 text-slate-950 font-bold transition duration-150 transform hover:-translate-y-0.5 shadow-lg shadow-red-500/20 text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid font-bold fa-heart-pulse"></i> Healthcare Companion Tracker
                     </a>
                     <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 hover:border-slate-600 text-slate-200 font-bold transition duration-150 transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
                         <i class="fa-solid fa-code"></i> View Portfolio
@@ -138,19 +138,19 @@
                 <div class="mt-16 pt-10 border-t border-slate-800/50 max-w-3xl mx-auto">
                     <p class="text-xs font-bold text-slate-500 tracking-wider uppercase mb-4">Primary Technical Stack</p>
                     <div class="flex flex-wrap justify-center items-center gap-3">
-                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-300 flex items-center gap-1.5 hover:border-rose-500/30 transition">
+                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-300 flex items-center gap-1.5 hover:border-blue-500/30 transition">
                             <i class="fa-brands fa-python text-yellow-500"></i> Python (Pandas/NumPy)
                         </span>
-                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-300 flex items-center gap-1.5 hover:border-rose-500/30 transition">
+                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-300 flex items-center gap-1.5 hover:border-blue-500/30 transition">
                             <i class="fa-solid fa-database text-blue-400"></i> SQL (MySQL/Schema Design)
                         </span>
-                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-300 flex items-center gap-1.5 hover:border-rose-500/30 transition">
+                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-300 flex items-center gap-1.5 hover:border-blue-500/30 transition">
                             <i class="fa-solid fa-chart-bar text-yellow-400"></i> Power BI & Tableau
                         </span>
-                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-300 flex items-center gap-1.5 hover:border-rose-500/30 transition">
+                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-300 flex items-center gap-1.5 hover:border-blue-500/30 transition">
                             <i class="fa-solid fa-eye text-cyan-400"></i> Computer Vision
                         </span>
-                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-300 flex items-center gap-1.5 hover:border-rose-500/30 transition">
+                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-300 flex items-center gap-1.5 hover:border-blue-500/30 transition">
                             <i class="fa-solid fa-gears text-purple-400"></i> Agentic Systems
                         </span>
                     </div>
@@ -166,11 +166,11 @@
 
                 <!-- Left: Quick Profile Card -->
                 <div class="bg-gradient-to-b from-slate-900 to-[#0f172a] p-6 rounded-2xl border border-slate-800 shadow-xl">
-                    <div class="w-24 h-24 bg-gradient-to-tr from-rose-500 to-red-500 rounded-full mx-auto flex items-center justify-center mb-4 shadow-md shadow-rose-500/10">
+                    <div class="w-24 h-24 bg-gradient-to-tr from-blue-500 to-indigo-500 rounded-full mx-auto flex items-center justify-center mb-4 shadow-md shadow-blue-500/10">
                         <i class="fa-solid fa-user-tie text-4xl text-slate-950"></i>
                     </div>
                     <h3 class="text-xl font-bold text-center mb-1">Ben Wright</h3>
-                    <p class="text-sm text-rose-400 font-semibold text-center mb-4">London, UK</p>
+                    <p class="text-sm text-blue-400 font-semibold text-center mb-4">London, UK</p>
                     <div class="space-y-3.5 text-sm border-t border-slate-800/80 pt-4 text-slate-300">
                         <div class="flex items-center gap-3">
                             <i class="fa-solid fa-graduation-cap text-slate-500 w-5"></i>
@@ -182,11 +182,11 @@
                         </div>
                         <div class="flex items-center gap-3">
                             <i class="fa-brands fa-github text-slate-500 w-5"></i>
-                            <a href="https://github.com/BenWright12" target="_blank" class="hover:text-rose-400 transition">github/BenWright12</a>
+                            <a href="https://github.com/BenWright12" target="_blank" class="hover:text-blue-400 transition">github/BenWright12</a>
                         </div>
                         <div class="flex items-center gap-3">
                             <i class="fa-brands fa-linkedin text-slate-500 w-5"></i>
-                            <a href="https://www.linkedin.com/in/benwright213546" target="_blank" class="hover:text-rose-400 transition">in/benwright213546</a>
+                            <a href="https://www.linkedin.com/in/benwright213546" target="_blank" class="hover:text-blue-400 transition">in/benwright213546</a>
                         </div>
                     </div>
                 </div>
@@ -205,11 +205,11 @@
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                         <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700/80 transition">
-                            <h4 class="font-bold text-rose-400 mb-1"><i class="fa-solid fa-hospital-user mr-1.5"></i> Privacy-First Vision</h4>
+                            <h4 class="font-bold text-blue-400 mb-1"><i class="fa-solid fa-hospital-user mr-1.5"></i> Privacy-First Vision</h4>
                             <p class="text-xs text-slate-400">Developing offline computer vision filters on localised edge microcomputers (Raspberry Pi/Jetson) to ensure absolute healthcare data protection.</p>
                         </div>
                         <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700/80 transition">
-                            <h4 class="font-bold text-rose-400 mb-1"><i class="fa-solid fa-shield-halved mr-1.5"></i> Production Security</h4>
+                            <h4 class="font-bold text-blue-400 mb-1"><i class="fa-solid fa-shield-halved mr-1.5"></i> Production Security</h4>
                             <p class="text-xs text-slate-400">Engineering secure, containerised data pipelines and local database encryption (SQLCipher) to safeguard analytical records.</p>
                         </div>
                     </div>
@@ -224,7 +224,7 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-bold mb-4">Professional & Academic History</h2>
-                <div class="w-16 h-1 bg-gradient-to-r from-rose-500 to-red-500 mx-auto rounded-full mb-6"></div>
+                <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full mb-6"></div>
                 <p class="text-slate-400">
                     A timeline showcasing my progression from hospitality management to large scale site operations, academic credentials, and my current pivot into AI and Data Science.
                 </p>
@@ -234,16 +234,16 @@
 
                 <!-- Experience Item 1 -->
                 <div class="relative">
-                    <div class="absolute -left-[45px] top-1 bg-rose-500 text-slate-950 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ring-4 ring-[#0b0f19]">
+                    <div class="absolute -left-[45px] top-1 bg-blue-500 text-slate-950 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ring-4 ring-[#0b0f19]">
                         <i class="fa-solid fa-building-user"></i>
                     </div>
                     <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 hover:border-slate-700/80 transition shadow-md">
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-3">
                             <div>
                                 <h3 class="text-lg font-bold text-slate-100">Facilities Associate</h3>
-                                <p class="text-sm text-rose-400 font-medium">CBRE (Full-Time) • On-Site (London)</p>
+                                <p class="text-sm text-blue-400 font-medium">CBRE (Full-Time) • On-Site (London)</p>
                             </div>
-                            <span class="text-xs bg-rose-950 text-rose-400 border border-rose-850 px-2.5 py-1 rounded-full font-bold">Jun 2024 - Present</span>
+                            <span class="text-xs bg-blue-950 text-blue-400 border border-blue-850 px-2.5 py-1 rounded-full font-bold">Jun 2024 - Present</span>
                         </div>
                         <ul class="text-xs sm:text-sm text-slate-400 list-disc list-inside space-y-2 leading-relaxed">
                             <li>Orchestrate and optimise daily operational conditions across three major Google office sites in London to guarantee high performance, seamless functionality.</li>
@@ -255,14 +255,14 @@
 
                 <!-- Experience Item 2 -->
                 <div class="relative">
-                    <div class="absolute -left-[45px] top-1 bg-slate-800 text-rose-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ring-4 ring-[#0b0f19]">
+                    <div class="absolute -left-[45px] top-1 bg-slate-800 text-blue-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ring-4 ring-[#0b0f19]">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 hover:border-slate-700/80 transition shadow-md">
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-3">
                             <div>
                                 <h3 class="text-lg font-bold text-slate-100">Assistant Venue Manager / Shift Manager</h3>
-                                <p class="text-sm text-rose-400 font-medium">Whistle Punks Urban Axe Throwing (Full-Time) • London</p>
+                                <p class="text-sm text-blue-400 font-medium">Whistle Punks Urban Axe Throwing (Full-Time) • London</p>
                             </div>
                             <span class="text-xs bg-slate-900 text-slate-400 border border-slate-800 px-2.5 py-1 rounded-full font-bold">Nov 2022 - May 2024</span>
                         </div>
@@ -276,14 +276,14 @@
 
                 <!-- Experience Item 3 -->
                 <div class="relative">
-                    <div class="absolute -left-[45px] top-1 bg-slate-800 text-rose-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ring-4 ring-[#0b0f19]">
+                    <div class="absolute -left-[45px] top-1 bg-slate-800 text-blue-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ring-4 ring-[#0b0f19]">
                         <i class="fa-solid fa-shop"></i>
                     </div>
                     <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 hover:border-slate-700/80 transition shadow-md">
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-3">
                             <div>
                                 <h3 class="text-lg font-bold text-slate-100">Assistant Store Manager</h3>
-                                <p class="text-sm text-rose-400 font-medium">Greggs (Full-Time) • London</p>
+                                <p class="text-sm text-blue-400 font-medium">Greggs (Full-Time) • London</p>
                             </div>
                             <span class="text-xs bg-slate-900 text-slate-400 border border-slate-800 px-2.5 py-1 rounded-full font-bold">Nov 2020 - Nov 2022</span>
                         </div>
@@ -295,7 +295,7 @@
                     </div>
                 </div>
 
-                <!-- Academic Item 1 -->
+                <!-- Academic Item 1 (Kept Purple) -->
                 <div class="relative">
                     <div class="absolute -left-[45px] top-1 bg-purple-950 text-purple-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ring-4 ring-[#0b0f19]">
                         <i class="fa-solid fa-graduation-cap"></i>
@@ -304,7 +304,7 @@
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-2">
                             <div>
                                 <h3 class="text-lg font-bold text-slate-100">Middlesex University</h3>
-                                <p class="text-sm text-rose-400 font-medium">Bachelor of Arts (BA) in Theatre / Arts Management</p>
+                                <p class="text-sm text-blue-400 font-medium">Bachelor of Arts (BA) in Theatre / Arts Management</p>
                             </div>
                             <span class="text-xs bg-purple-950/40 text-purple-400 border border-purple-900/40 px-2.5 py-1 rounded-full font-bold">Graduated 2021</span>
                         </div>
@@ -323,7 +323,7 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-bold mb-4">Academic AI Journey</h2>
-                <div class="w-16 h-1 bg-gradient-to-r from-rose-500 to-red-500 mx-auto rounded-full mb-6"></div>
+                <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full mb-6"></div>
                 <p class="text-slate-400">
                     My studies at Birkbeck directly fuel the research, mathematical modelling, and engineering architectures of the open source projects I develop.
                 </p>
@@ -331,11 +331,11 @@
 
             <!-- Birkbeck Card -->
             <div class="bg-gradient-to-r from-slate-900 to-[#0e1726] rounded-2xl border border-slate-800 p-8 shadow-2xl relative overflow-hidden">
-                <div class="absolute -right-12 -bottom-12 w-64 h-64 bg-rose-500/5 rounded-full blur-[60px]"></div>
+                <div class="absolute -right-12 -bottom-12 w-64 h-64 bg-blue-500/5 rounded-full blur-[60px]"></div>
 
                 <div class="flex flex-col md:flex-row gap-8 items-start relative z-10">
                     <div class="bg-[#1e293b] p-4 rounded-xl border border-slate-700/50 flex-shrink-0 mx-auto md:mx-0">
-                        <i class="fa-solid fa-university text-5xl text-rose-400"></i>
+                        <i class="fa-solid fa-university text-5xl text-blue-400"></i>
                     </div>
                     <div class="space-y-4 text-center md:text-left">
                         <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
@@ -343,7 +343,7 @@
                                 <h3 class="text-2xl font-bold text-slate-100">MSc Data Science & Artificial Intelligence</h3>
                                 <p class="text-slate-400 font-medium">Birkbeck, University of London <span class="text-slate-500">• Part-Time</span></p>
                             </div>
-                            <span class="self-center md:self-start bg-rose-950/60 text-rose-400 border border-rose-800 text-xs font-bold px-3 py-1.5 rounded-full">
+                            <span class="self-center md:self-start bg-blue-950/60 text-blue-400 border border-blue-800 text-xs font-bold px-3 py-1.5 rounded-full">
                                 Entering 2026 Cohort
                             </span>
                         </div>
@@ -354,15 +354,15 @@
                         <!-- Core Academic Pillars -->
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-3 text-left">
                             <div class="p-3 rounded-lg bg-[#0b0f19]/70 border border-slate-800">
-                                <span class="text-xs text-rose-400 font-bold block mb-1">DATA PROCESSING</span>
+                                <span class="text-xs text-blue-400 font-bold block mb-1">DATA PROCESSING</span>
                                 <span class="text-xs text-slate-400 leading-snug block">Leveraging advanced SQL and Python to extract and prepare complex analytics feeds.</span>
                             </div>
                             <div class="p-3 rounded-lg bg-[#0b0f19]/70 border border-slate-800">
-                                <span class="text-xs text-rose-400 font-bold block mb-1">COMPUTER VISION</span>
+                                <span class="text-xs text-blue-400 font-bold block mb-1">COMPUTER VISION</span>
                                 <span class="text-xs text-slate-400 leading-snug block">Designing localised networks to monitor motion vectors without privacy leakage.</span>
                             </div>
                             <div class="p-3 rounded-lg bg-[#0b0f19]/70 border border-slate-800">
-                                <span class="text-xs text-rose-400 font-bold block mb-1">ETHICAL SYSTEMS</span>
+                                <span class="text-xs text-blue-400 font-bold block mb-1">ETHICAL SYSTEMS</span>
                                 <span class="text-xs text-slate-400 leading-snug block">Applying strict data protection methodologies to local machine learning.</span>
                             </div>
                         </div>
@@ -373,14 +373,15 @@
     </section>
 
     <!-- HEALTHCARE COMPANION SPOTLIGHT (DEVLOG ENGINE) -->
+    <!-- RED CROSS THEMED SECTION -->
     <section id="companion" class="py-20 bg-slate-950/20 border-t border-slate-900 relative">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-rose-400 font-bold tracking-widest text-xs uppercase block mb-2">FLAGSHIP PROJECT INITIATIVE</span>
+                <span class="text-red-400 font-bold tracking-widest text-xs uppercase block mb-2">FLAGSHIP PROJECT INITIATIVE</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100 flex items-center justify-center gap-3">
                     <i class="fa-solid fa-hand-holding-heart text-red-500 animate-pulse"></i> The Healthcare Companion - Evie
                 </h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-rose-400 to-red-400 mx-auto rounded-full mt-4 mb-6"></div>
+                <div class="w-20 h-1 bg-gradient-to-r from-red-500 to-rose-400 mx-auto rounded-full mt-4 mb-6"></div>
                 <p class="text-slate-400">
                     A conceptual vision for an intelligent personal companion designed to support active, home based health monitoring, utilising multi-modal AI and privacy first edge processing.
                 </p>
@@ -415,10 +416,10 @@
                     <div class="mt-8 pt-6 border-t border-slate-850">
                         <div class="flex justify-between text-xs text-slate-400 mb-2">
                             <span>MSc Alignment & Architecture Phase</span>
-                            <span class="font-bold text-rose-400">15% Complete</span>
+                            <span class="font-bold text-red-400">15% Complete</span>
                         </div>
                         <div class="w-full h-2 bg-[#0b0f19] rounded-full overflow-hidden border border-slate-850">
-                            <div class="h-full w-[15%] bg-gradient-to-r from-rose-500 to-red-400 rounded-full"></div>
+                            <div class="h-full w-[15%] bg-gradient-to-r from-red-500 to-rose-400 rounded-full"></div>
                         </div>
                     </div>
                 </div>
@@ -426,21 +427,21 @@
                 <!-- Right Progress Tracker / Timeline -->
                 <div class="lg:col-span-5 bg-gradient-to-b from-[#0f172a] to-slate-950 p-6 rounded-2xl border border-slate-800">
                     <h3 class="text-lg font-bold text-slate-200 mb-6 flex items-center gap-2">
-                        <i class="fa-solid fa-route text-rose-400"></i> Development Roadmap
+                        <i class="fa-solid fa-route text-red-400"></i> Development Roadmap
                     </h3>
 
                     <div class="relative pl-6 border-l border-slate-800 space-y-8">
                         <!-- Step 1 -->
                         <div class="relative">
-                            <span class="absolute -left-[31px] top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-rose-500 text-[8px] text-slate-950 font-bold ring-4 ring-[#0b0f19]">✓</span>
+                            <span class="absolute -left-[31px] top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-[8px] text-slate-950 font-bold ring-4 ring-[#0b0f19]">✓</span>
                             <div>
-                                <h4 class="text-sm font-semibold text-rose-400">Phase 1: Conceptualisation & Ethics</h4>
+                                <h4 class="text-sm font-semibold text-red-400">Phase 1: Conceptualisation & Ethics</h4>
                                 <p class="text-xs text-slate-400 mt-1">Refining project scope, designing skeletal only anonymisation schemas, and writing SQLite database specifications with SQLCipher encryption.</p>
                             </div>
                         </div>
                         <!-- Step 2 -->
                         <div class="relative">
-                            <span class="absolute -left-[31px] top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-slate-800 text-[8px] text-rose-400 font-bold ring-4 ring-[#0b0f19] animate-pulse">●</span>
+                            <span class="absolute -left-[31px] top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-slate-800 text-[8px] text-red-400 font-bold ring-4 ring-[#0b0f19] animate-pulse">●</span>
                             <div>
                                 <h4 class="text-sm font-semibold text-slate-200">Phase 2: Birkbeck Research Integration</h4>
                                 <p class="text-xs text-slate-400 mt-1">Leveraging machine learning coursework to build and test lightweight human pose spatial models against public care datasets.</p>
@@ -465,27 +466,27 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12">
                 <div>
-                    <h2 class="text-3xl font-extrabold text-slate-100"><i class="fa-solid fa-cubes text-rose-400 mr-2"></i> Pinned Work & Repositories</h2>
+                    <h2 class="text-3xl font-extrabold text-slate-100"><i class="fa-solid fa-cubes text-blue-400 mr-2"></i> Pinned Work & Repositories</h2>
                     <p class="text-slate-400 text-sm mt-2">Grounded directly on my GitHub repository source code.</p>
                 </div>
-                <a href="https://github.com/BenWright12" target="_blank" class="text-sm font-semibold text-rose-400 hover:text-rose-300 mt-4 sm:mt-0 flex items-center gap-1.5 transition">
+                <a href="https://github.com/BenWright12" target="_blank" class="text-sm font-semibold text-blue-400 hover:text-blue-300 mt-4 sm:mt-0 flex items-center gap-1.5 transition">
                     View GitHub Profile <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                 </a>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Project 1: ai-systems -->
-                <div class="group bg-slate-900/60 hover:bg-[#0f172a] rounded-2xl border border-slate-800 hover:border-rose-500/30 transition-all duration-300 p-6 shadow-xl hover:shadow-rose-500/5 flex flex-col justify-between">
+                <div class="group bg-slate-900/60 hover:bg-[#0f172a] rounded-2xl border border-slate-800 hover:border-blue-500/30 transition-all duration-300 p-6 shadow-xl hover:shadow-blue-500/5 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-xs font-bold font-mono text-slate-500 flex items-center gap-1.5">
                                 <i class="fa-solid fa-circle text-blue-400 text-[8px]"></i> PYTHON SYSTEM
                             </span>
-                            <a href="https://github.com/BenWright12/ai-systems" target="_blank" class="text-slate-400 hover:text-rose-400 transition">
+                            <a href="https://github.com/BenWright12/ai-systems" target="_blank" class="text-slate-400 hover:text-blue-400 transition">
                                 <i class="fa-brands fa-github text-xl"></i>
                             </a>
                         </div>
-                        <h3 class="text-xl font-bold group-hover:text-rose-400 transition duration-150 mb-2">ai-systems</h3>
+                        <h3 class="text-xl font-bold group-hover:text-blue-400 transition duration-150 mb-2">ai-systems</h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
                             Autonomous agentic systems engineered for end-to-end data extraction, secure multi-stage pipeline management, and robust administrative audits.
                         </p>
@@ -500,17 +501,17 @@
                 </div>
 
                 <!-- Project 2: data-analytics -->
-                <div class="group bg-slate-900/60 hover:bg-[#0f172a] rounded-2xl border border-slate-800 hover:border-rose-500/30 transition-all duration-300 p-6 shadow-xl hover:shadow-rose-500/5 flex flex-col justify-between">
+                <div class="group bg-slate-900/60 hover:bg-[#0f172a] rounded-2xl border border-slate-800 hover:border-blue-500/30 transition-all duration-300 p-6 shadow-xl hover:shadow-blue-500/5 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-xs font-bold font-mono text-slate-500 flex items-center gap-1.5">
                                 <i class="fa-solid fa-circle text-amber-500 text-[8px]"></i> JUPYTER NOTEBOOK
                             </span>
-                            <a href="https://github.com/BenWright12/data-analytics" target="_blank" class="text-slate-400 hover:text-rose-400 transition">
+                            <a href="https://github.com/BenWright12/data-analytics" target="_blank" class="text-slate-400 hover:text-blue-400 transition">
                                 <i class="fa-brands fa-github text-xl"></i>
                             </a>
                         </div>
-                        <h3 class="text-xl font-bold group-hover:text-rose-400 transition duration-150 mb-2">data-analytics</h3>
+                        <h3 class="text-xl font-bold group-hover:text-blue-400 transition duration-150 mb-2">data-analytics</h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
                             A collection of data analytics projects including Exploratory Data Analyses (EDAs), calculated metrics, and interactive analytics tracking dashboards.
                         </p>
@@ -531,9 +532,9 @@
     <section id="blog" class="py-20 bg-slate-950/40 border-y border-slate-900">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-rose-400 font-bold tracking-widest text-xs uppercase block mb-2">JOURNAL OF PROGRESS</span>
+                <span class="text-blue-400 font-bold tracking-widest text-xs uppercase block mb-2">JOURNAL OF PROGRESS</span>
                 <h2 class="text-3xl font-extrabold text-slate-100">Birkbeck & Companion DevLog</h2>
-                <div class="w-16 h-1 bg-gradient-to-r from-rose-500 to-red-500 mx-auto rounded-full mt-4 mb-6"></div>
+                <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full mt-4 mb-6"></div>
                 <p class="text-slate-400">
                     A space to reflect on computer vision theory, document MSc academic research, and post technical journals tracking the architecture of the Healthcare Companion.
                 </p>
@@ -543,35 +544,35 @@
                 <!-- Blog Entry 1 -->
                 <div class="bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-slate-750 transition-all shadow-lg">
                     <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
-                        <span class="px-2.5 py-1 rounded-full bg-rose-950/60 border border-rose-900 text-rose-400 font-semibold uppercase">Operations & AI</span>
+                        <span class="px-2.5 py-1 rounded-full bg-blue-950/60 border border-blue-900 text-blue-400 font-semibold uppercase">Operations & AI</span>
                         <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> October 2026</span>
                         <span class="text-slate-500"><i class="fa-regular fa-clock mr-1.5"></i> 5 min read</span>
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-slate-100 hover:text-rose-400 transition duration-150 mb-3 cursor-pointer">
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-100 hover:text-blue-400 transition duration-150 mb-3 cursor-pointer">
                         Bridging Operations & AI: Why My Facilities Experience Fuels My Healthcare Vision
                     </h3>
                     <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
                         Reflecting on how operational auditing, strict data integrity constraints, and stakeholder management at Google office sites (CBRE) directly translate into designing dependable digital care systems. Discussing how database design modules at Birkbeck align with the secure SQLite/SQLCipher logging needs of our Care Companion.
                     </p>
-                    <a href="#blog" class="inline-flex items-center gap-1.5 text-xs font-bold text-rose-400 hover:text-rose-300 transition uppercase tracking-wider">
+                    <a href="#blog" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-400 hover:text-blue-300 transition uppercase tracking-wider">
                         Read Full DevLog <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
 
-                <!-- Blog Entry 2 -->
+                <!-- Blog Entry 2 (Companion Themed Red) -->
                 <div class="bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-slate-750 transition-all shadow-lg">
                     <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
                         <span class="px-2.5 py-1 rounded-full bg-red-950/60 border border-red-900 text-red-400 font-semibold uppercase">Companion Architecture</span>
                         <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> November 2026</span>
                         <span class="text-slate-500"><i class="fa-regular fa-clock mr-1.5"></i> 7 min read</span>
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-slate-100 hover:text-rose-400 transition duration-150 mb-3 cursor-pointer">
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-100 hover:text-red-400 transition duration-150 mb-3 cursor-pointer">
                         Privacy First Edge Nodes: Real Time Face Blurring and In-Memory Frame Purging
                     </h3>
                     <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
                         A detailed dive into Phase 1 of our Healthcare Companion specifications. Investigating how to run continuous local face blurring and 33 landmark coordinate extraction using MediaPipe on a Raspberry Pi 5. By purging raw frames from system memory instantly, we guarantee zero camera image leakage.
                     </p>
-                    <a href="#blog" class="inline-flex items-center gap-1.5 text-xs font-bold text-rose-400 hover:text-rose-300 transition uppercase tracking-wider">
+                    <a href="#blog" class="inline-flex items-center gap-1.5 text-xs font-bold text-red-400 hover:text-red-300 transition uppercase tracking-wider">
                         Read Full DevLog <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
@@ -582,11 +583,11 @@
     <!-- COMMUNITY SECTION -->
     <section id="community" class="py-20 relative bg-[#0b0f19]">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-r from-rose-500/10 to-red-500/10 rounded-3xl border border-rose-500/20 p-8 sm:p-12 text-center shadow-xl relative overflow-hidden">
-                <div class="absolute -left-12 -top-12 w-48 h-48 bg-red-500/10 rounded-full blur-3xl"></div>
+            <div class="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-3xl border border-blue-500/20 p-8 sm:p-12 text-center shadow-xl relative overflow-hidden">
+                <div class="absolute -left-12 -top-12 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl"></div>
                 <div class="relative z-10 max-w-2xl mx-auto">
-                    <div class="w-16 h-16 bg-rose-500/10 rounded-2xl mx-auto flex items-center justify-center mb-6 border border-rose-500/20">
-                        <i class="fa-solid fa-people-group text-3xl text-rose-400"></i>
+                    <div class="w-16 h-16 bg-blue-500/10 rounded-2xl mx-auto flex items-center justify-center mb-6 border border-blue-500/20">
+                        <i class="fa-solid fa-people-group text-3xl text-blue-400"></i>
                     </div>
                     <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">Building a Care-Tech Developer Community</h2>
                     <p class="text-slate-300 text-sm sm:text-base mb-8 leading-relaxed">
@@ -596,13 +597,13 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left mb-6">
                         <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
                             <h4 class="font-bold text-sm text-slate-200 mb-1 flex items-center gap-2">
-                                <i class="fa-solid fa-comments text-rose-400"></i> Integrated Giscus Comments
+                                <i class="fa-solid fa-comments text-blue-400"></i> Integrated Giscus Comments
                             </h4>
                             <p class="text-xs text-slate-400">My blog uses Giscus, letting care professionals and developers comment on implementations directly with their GitHub profiles.</p>
                         </div>
                         <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
                             <h4 class="font-bold text-sm text-slate-200 mb-1 flex items-center gap-2">
-                                <i class="fa-brands fa-github-alt text-rose-400"></i> GitHub Forums
+                                <i class="fa-brands fa-github-alt text-blue-400"></i> GitHub Forums
                             </h4>
                             <p class="text-xs text-slate-400">Our main code repos host centralised Discussions where developers can suggest math models or audit edge security configurations.</p>
                         </div>
@@ -619,10 +620,10 @@
             <p class="text-slate-400 text-sm mb-8">Feel free to reach out if you'd like to collaborate, discuss MSc topics, or discuss healthcare AI!</p>
 
             <div class="flex justify-center items-center gap-6 mb-10">
-                <a href="https://github.com/BenWright12" target="_blank" class="w-14 h-14 bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-rose-400 rounded-xl flex items-center justify-center border border-slate-800 hover:border-rose-500/30 transition text-2xl shadow-lg">
+                <a href="https://github.com/BenWright12" target="_blank" class="w-14 h-14 bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-blue-400 rounded-xl flex items-center justify-center border border-slate-800 hover:border-blue-500/30 transition text-2xl shadow-lg">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/benwright213546" target="_blank" class="w-14 h-14 bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-rose-400 rounded-xl flex items-center justify-center border border-slate-800 hover:border-rose-500/30 transition text-2xl shadow-lg">
+                <a href="https://www.linkedin.com/in/benwright213546" target="_blank" class="w-14 h-14 bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-blue-400 rounded-xl flex items-center justify-center border border-slate-800 hover:border-blue-500/30 transition text-2xl shadow-lg">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </div>
