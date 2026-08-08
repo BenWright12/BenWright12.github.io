@@ -108,7 +108,6 @@
 
     <!-- HERO SECTION -->
     <section class="relative pt-32 pb-24 md:pt-40 md:pb-36 overflow-hidden">
-        <!-- Abstract glowing backgrounds (Team Teal/Emerald) -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div class="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-emerald-500/5 rounded-full blur-[100px] pointer-events-none"></div>
 
@@ -493,7 +492,7 @@
                             </a>
                         </div>
                         <h3 class="text-xl font-bold mb-2">
-                            <a href="https://github.com/BenWright12/ai-systems" target="_blank" class="group-hover:text-teal-400 transition duration-150">ai-systems</a>
+                            <a href="https://github.com/BenWright12/ai-systems" target="_blank" class="group-hover:text-teal-400 no-underline hover:no-underline transition duration-150">ai-systems</a>
                         </h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
                             Autonomous agentic systems engineered for end-to-end data extraction, secure multi-stage pipeline management, and robust administrative audits.
@@ -520,7 +519,7 @@
                             </a>
                         </div>
                         <h3 class="text-xl font-bold mb-2">
-                            <a href="https://github.com/BenWright12/data-analytics" target="_blank" class="group-hover:text-teal-400 transition duration-150">data-analytics</a>
+                            <a href="https://github.com/BenWright12/data-analytics" target="_blank" class="group-hover:text-teal-400 no-underline hover:no-underline transition duration-150">data-analytics</a>
                         </h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
                             A collection of data analytics projects including Exploratory Data Analyses (EDAs), calculated metrics, and interactive analytics tracking dashboards.
@@ -555,36 +554,35 @@
                 <div class="bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-slate-750 transition-all shadow-lg">
                     <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
                         <span class="px-2.5 py-1 rounded-full bg-teal-950/60 border border-teal-900 text-teal-400 font-semibold uppercase">Operations & AI</span>
-                        <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> October 2026</span>
-                        <span class="text-slate-500"><i class="fa-regular fa-clock mr-1.5"></i> 5 min read</span>
+                        <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> August 2026</span>
+                        <span class="text-slate-500"><i class="fa-regular fa-clock mr-1.5"></i> 4 min read</span>
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-slate-100 hover:text-teal-400 transition duration-150 mb-3 cursor-pointer">
-                        Why My Facilities Experience Fuels My Healthcare Vision
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-100 hover:text-teal-400 transition duration-150 mb-3">
+                        <a href="devlogs/devlog-1.html">Why My Facilities Experience Fuels My Healthcare Vision</a>
                     </h3>
                     <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
                         Reflecting on how operational auditing, strict data integrity constraints, and stakeholder management at Google office sites (CBRE) directly translate into designing dependable digital care systems. Discussing how database design modules at Birkbeck align with the secure SQLite/SQLCipher logging needs of our Care Companion.
                     </p>
-                    <a href="#blog" class="inline-flex items-center gap-1.5 text-xs font-bold text-teal-400 hover:text-teal-300 transition uppercase tracking-wider">
+                    <a href="devlogs/devlog-1.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-teal-400 hover:text-teal-300 transition uppercase tracking-wider">
                         Read Full DevLog <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
 
-                <!-- Blog Entry 2 (Companion Themed Red) -->
-                <div class="bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-slate-750 transition-all shadow-lg">
+                <!-- Blog Entry 2 (Drafting in progress) -->
+                <div class="bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 transition-all shadow-lg opacity-80">
                     <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
                         <span class="px-2.5 py-1 rounded-full bg-red-950/60 border border-red-900 text-red-400 font-semibold uppercase">Companion Architecture</span>
-                        <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> November 2026</span>
-                        <span class="text-slate-500"><i class="fa-regular fa-clock mr-1.5"></i> 7 min read</span>
+                        <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> Expected in November 2026</span>
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-slate-100 hover:text-red-400 transition duration-150 mb-3 cursor-pointer">
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-300 mb-3">
                         Real Time Face Blurring and In Memory Frame Purging
                     </h3>
-                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-4">
                         A detailed dive into Phase 1 of our Healthcare Companion specifications. Investigating how to run continuous local face blurring and 33 landmark coordinate extraction using MediaPipe on a Raspberry Pi 5. By purging raw frames from system memory instantly, we guarantee zero camera image leakage.
                     </p>
-                    <a href="#blog" class="inline-flex items-center gap-1.5 text-xs font-bold text-red-400 hover:text-red-300 transition uppercase tracking-wider">
-                        Read Full DevLog <i class="fa-solid fa-chevron-right"></i>
-                    </a>
+                    <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                        Drafting in Progress...
+                    </span>
                 </div>
             </div>
         </div>
