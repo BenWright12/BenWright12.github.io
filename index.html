@@ -301,7 +301,7 @@
                     </div>
                 </div>
 
-                <!-- Academic Item 1 (Kept Purple) -->
+                <!-- Academic Item 1 (Purple) -->
                 <div class="relative">
                     <div class="absolute -left-[45px] top-1 bg-purple-950 text-purple-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ring-4 ring-[#0b0f19]">
                         <i class="fa-solid fa-graduation-cap"></i>
@@ -378,7 +378,7 @@
         </div>
     </section>
 
-    <!-- HEALTHCARE COMPANION SPOTLIGHT (IMMERSIVE WINE RED) -->
+    <!-- HEALTHCARE COMPANION SPOTLIGHT (WINE RED) -->
     <section id="companion" class="py-20 bg-gradient-to-b from-[#0b0f19] via-rose-950/20 to-[#0b0f19] border-y border-rose-900/30 relative">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -429,7 +429,7 @@
                     </div>
                 </div>
 
-                <!-- Right Progress Tracker / Timeline (Tinted Red for Immersion) -->
+                <!-- Right Progress Tracker / Timeline (Tinted Red) -->
                 <div class="lg:col-span-5 bg-gradient-to-b from-rose-950/10 to-[#0f172a]/50 p-6 rounded-2xl border border-rose-900/40 backdrop-blur-sm">
                     <h3 class="text-lg font-bold text-slate-200 mb-6 flex items-center gap-2">
                         <i class="fa-solid fa-route text-red-400"></i> Development Roadmap
@@ -538,8 +538,13 @@
     </section>
 
     <!-- DEVELOPMENT BLOG / DEVLOG SECTION -->
-    <section id="blog" class="py-20 bg-slate-950/40 border-y border-slate-900">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="blog" class="py-20 bg-slate-950/40 border-y border-slate-900 relative overflow-hidden">
+        
+        <!-- Deep Ambient Background Glows -->
+        <div class="absolute top-0 left-0 w-[500px] sm:w-[800px] h-[600px] bg-teal-500/10 rounded-full blur-[150px] pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-[500px] sm:w-[800px] h-[600px] bg-red-600/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-teal-400 font-bold tracking-widest text-xs uppercase block mb-2">JOURNAL OF PROGRESS</span>
                 <h2 class="text-3xl font-extrabold text-slate-100">Birkbeck & Companion DevLogs</h2>
@@ -549,8 +554,73 @@
                 </p>
             </div>
 
-            <!-- EVIE / COMPANION DEVLOGS (Red Theme) -->
+            <!-- GENERAL / PERSONAL DEVLOGS -->
             <div class="mb-16">
+                <div class="flex justify-between items-end mb-6 px-2">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-100 flex items-center gap-2">
+                            <i class="fa-solid fa-code text-teal-400"></i> Personal & Academic Progression
+                        </h3>
+                        <p class="text-sm text-slate-400 mt-1">General development, Data Science concepts, and side projects.</p>
+                    </div>
+                    <a href="devlogs/all-devlogs.html" class="text-sm font-bold text-teal-400 hover:text-teal-300 transition whitespace-nowrap flex items-center gap-1.5 hidden sm:flex">
+                        See more <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Horizontal Scroll Container -->
+                <div class="flex overflow-x-auto pb-8 -mx-4 px-4 sm:mx-0 sm:px-2 gap-6 snap-x snap-mandatory" style="scrollbar-width: thin; scrollbar-color: #0f766e transparent;">
+                    
+                    <!-- Card 1 (General - Existing Post) -->
+                    <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[26rem] bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col hover:border-slate-750 transition-all shadow-lg">
+                        <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+                            <span class="px-2.5 py-1 rounded-full bg-teal-950/60 border border-teal-900 text-teal-400 font-semibold uppercase">Operations & AI</span>
+                            <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> August 2026</span>
+                            <span class="text-slate-500"><i class="fa-regular fa-clock mr-1.5"></i> 4 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-100 hover:text-teal-400 transition duration-150 mb-3">
+                            <a href="devlogs/devlog-1.html">Why My Facilities Experience Fuels My Healthcare Vision</a>
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 flex-grow">
+                            Reflecting on how operational auditing, strict data integrity constraints, and stakeholder management at Google office sites (CBRE) directly translate into designing dependable digital care systems. Discussing how database design modules at Birkbeck align with the secure SQLite/SQLCipher logging needs of our Care Companion.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="devlogs/devlog-1.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-teal-400 hover:text-teal-300 transition uppercase tracking-wider">
+                                Read Full DevLog <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 (New Draft DnD) -->
+                    <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[26rem] bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col shadow-lg opacity-80">
+                        <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+                            <span class="px-2.5 py-1 rounded-full bg-teal-950/60 border border-teal-900 text-teal-400 font-semibold uppercase">Side Projects</span>
+                            <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> Expected Oct 2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-300 mb-3">
+                            Integrating LLMs into Tabletop RPGs
+                        </h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                            Stepping away from healthcare for a moment to explore creative AI applications. This upcoming project log will cover how I am chaining prompt architectures to build a responsive, context aware AI assistant that can dynamically generate D&D encounters and track party inventory.
+                        </p>
+                        <div class="mt-auto">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                                <i class="fa-solid fa-pen-ruler"></i> Drafting in Progress...
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Mobile Only "See More" -->
+                <div class="sm:hidden text-right px-4 mt-2">
+                     <a href="devlogs/all-devlogs.html" class="text-sm font-bold text-teal-400 hover:text-teal-300 transition flex justify-end items-center gap-1.5">
+                        See more <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- EVIE / COMPANION DEVLOGS -->
+            <div>
                 <div class="flex justify-between items-end mb-6 px-2">
                     <div>
                         <h3 class="text-2xl font-bold text-slate-100 flex items-center gap-2">
@@ -604,7 +674,7 @@
                         </div>
                     </div>
 
-                    <!-- Card 3 (Evie - field deck Field Terminal) -->
+                    <!-- Card 3 (Evie - field deck Terminal) -->
                     <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[26rem] bg-[#0f172a] border border-rose-900/30 rounded-2xl p-6 sm:p-8 flex flex-col shadow-lg opacity-80">
                         <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
                             <span class="px-2.5 py-1 rounded-full bg-red-950/60 border border-red-900 text-red-400 font-semibold uppercase">Hardware & Field Ops</span>
@@ -627,71 +697,6 @@
                 <!-- Mobile Only "See More" -->
                 <div class="sm:hidden text-right px-4 mt-2">
                      <a href="devlogs/all-devlogs.html" class="text-sm font-bold text-red-400 hover:text-red-300 transition flex justify-end items-center gap-1.5">
-                        See more <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- GENERAL / PERSONAL DEVLOGS (Teal Theme) -->
-            <div>
-                <div class="flex justify-between items-end mb-6 px-2">
-                    <div>
-                        <h3 class="text-2xl font-bold text-slate-100 flex items-center gap-2">
-                            <i class="fa-solid fa-code text-teal-400"></i> Personal & Academic Progression
-                        </h3>
-                        <p class="text-sm text-slate-400 mt-1">General development, Data Science concepts, and side projects.</p>
-                    </div>
-                    <a href="devlogs/all-devlogs.html" class="text-sm font-bold text-teal-400 hover:text-teal-300 transition whitespace-nowrap flex items-center gap-1.5 hidden sm:flex">
-                        See more <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-                
-                <!-- Horizontal Scroll Container -->
-                <div class="flex overflow-x-auto pb-8 -mx-4 px-4 sm:mx-0 sm:px-2 gap-6 snap-x snap-mandatory" style="scrollbar-width: thin; scrollbar-color: #0f766e transparent;">
-                    
-                    <!-- Card 3 (General - Existing Post) -->
-                    <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[26rem] bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col hover:border-slate-750 transition-all shadow-lg">
-                        <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
-                            <span class="px-2.5 py-1 rounded-full bg-teal-950/60 border border-teal-900 text-teal-400 font-semibold uppercase">Operations & AI</span>
-                            <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> August 2026</span>
-                            <span class="text-slate-500"><i class="fa-regular fa-clock mr-1.5"></i> 4 min read</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-100 hover:text-teal-400 transition duration-150 mb-3">
-                            <a href="devlogs/devlog-1.html">Why My Facilities Experience Fuels My Healthcare Vision</a>
-                        </h3>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-6 flex-grow">
-                            Reflecting on how operational auditing, strict data integrity constraints, and stakeholder management at Google office sites (CBRE) directly translate into designing dependable digital care systems. Discussing how database design modules at Birkbeck align with the secure SQLite/SQLCipher logging needs of our Care Companion.
-                        </p>
-                        <div class="mt-auto">
-                            <a href="devlogs/devlog-1.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-teal-400 hover:text-teal-300 transition uppercase tracking-wider">
-                                Read Full DevLog <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 (General - New Draft DnD) -->
-                    <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[26rem] bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col shadow-lg opacity-80">
-                        <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
-                            <span class="px-2.5 py-1 rounded-full bg-teal-950/60 border border-teal-900 text-teal-400 font-semibold uppercase">Side Projects</span>
-                            <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> Expected Oct 2026</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-300 mb-3">
-                            Integrating LLMs into Tabletop RPGs
-                        </h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
-                            Stepping away from healthcare for a moment to explore creative AI applications. This upcoming project log will cover how I am chaining prompt architectures to build a responsive, context aware AI assistant that can dynamically generate D&D encounters and track party inventory.
-                        </p>
-                        <div class="mt-auto">
-                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
-                                <i class="fa-solid fa-pen-ruler"></i> Drafting in Progress...
-                            </span>
-                        </div>
-                    </div>
-                    
-                </div>
-                <!-- Mobile Only "See More" -->
-                <div class="sm:hidden text-right px-4 mt-2">
-                     <a href="devlogs/all-devlogs.html" class="text-sm font-bold text-teal-400 hover:text-teal-300 transition flex justify-end items-center gap-1.5">
                         See more <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
@@ -765,7 +770,7 @@
         </div>
     </footer>
 
-    <!-- Mobile Menu -->
+    <!-- Mobile Menu Toggle -->
     <script>
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
