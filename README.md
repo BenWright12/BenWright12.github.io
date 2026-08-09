@@ -2,7 +2,7 @@
 
 Welcome to the source code repository for my personal portfolio and developer journal! 
 
-🌐 **[Click here to view my live website.](https://benwright12.github.io)**
+**[Click here to view my live website.](https://benwright12.github.io)**
 
 ## About This Repository
 This repository hosts the static front-end code for my personal website. It is designed to act as an interactive resume and a central hub for my project DevLogs, specifically tracking the architecture and progress of my flagship project: **The Healthcare Companion - Evie**.
