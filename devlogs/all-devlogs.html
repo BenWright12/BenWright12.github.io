@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All DevLogs | Ben Wright</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            500: '#14b8a6', // Teal
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0b0f19; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #14b8a6; }
+    </style>
+</head>
+<body class="bg-[#0b0f19] text-slate-100 font-sans selection:bg-teal-500 selection:text-white min-h-screen flex flex-col">
+
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0b0f19]/90 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="../index.html" class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-teal-400 to-emerald-400 bg-clip-text text-transparent hover:opacity-80 transition duration-150">
+                        <i class="fa-solid fa-arrow-left text-sm mr-2 text-teal-400"></i> Ben Wright
+                    </a>
+                </div>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="../index.html#about" class="text-slate-300 hover:text-teal-400 font-medium transition duration-150">About</a>
+                        <a href="../index.html#experience" class="text-slate-300 hover:text-teal-400 font-medium transition duration-150">Experience</a>
+                        <a href="../index.html#companion" class="text-slate-300 hover:text-red-400 font-medium transition duration-150 flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span> Healthcare Companion
+                        </a>
+                        <a href="../index.html#blog" class="text-slate-300 hover:text-teal-400 font-medium transition duration-150 font-semibold text-teal-400 bg-teal-950/40 px-3 py-1 rounded-full border border-teal-800/50">DevLog Hub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER SECTION -->
+    <section class="relative pt-32 pb-12 overflow-hidden border-b border-slate-800/50">
+        <!-- Split Background Glow -->
+        <div class="absolute top-0 left-1/4 -translate-x-1/2 w-[400px] h-[300px] bg-teal-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute top-0 right-1/4 translate-x-1/2 w-[400px] h-[300px] bg-red-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight text-slate-100 mb-4">
+                DevLog Archive
+            </h1>
+            <p class="text-slate-400 max-w-2xl mx-auto">
+                The complete hub for all development logs. Track my personal academic progress on the left, and follow the technical research for The Healthcare Companion - Evie on the right.
+            </p>
+        </div>
+    </section>
+
+    <!-- SPLIT LOGS SECTION -->
+    <section class="flex-grow py-12 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 relative">
+                <!-- Desktop visual divider line -->
+                <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-slate-800/80 -translate-x-1/2"></div>
+
+                <!-- LEFT COLUMN: PERSONAL (Teal) -->
+                <div>
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4 border-b border-slate-800/50 pb-4">
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-100 flex items-center gap-2">
+                                <i class="fa-solid fa-code text-teal-400"></i> Personal Progression
+                            </h2>
+                        </div>
+                        <!-- Sort Dropdown -->
+                        <select id="sort-personal" class="bg-[#0f172a] border border-slate-700 text-slate-300 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-teal-500 cursor-pointer">
+                            <option value="desc">Newest First</option>
+                            <option value="asc">Oldest First</option>
+                        </select>
+                    </div>
+
+                    <!-- Cards Container -->
+                    <div id="personal-logs" class="space-y-6 flex flex-col">
+                        
+                        <!-- Card: DnD (Oct 2026) -->
+                        <div class="w-full bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col shadow-lg opacity-80" data-date="2026-10">
+                            <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+                                <span class="px-2.5 py-1 rounded-full bg-teal-950/60 border border-teal-900 text-teal-400 font-semibold uppercase">Side Projects</span>
+                                <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> Expected Oct 2026</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-300 mb-3">
+                                Integrating LLMs into Tabletop RPGs
+                            </h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                                Stepping away from healthcare for a moment to explore creative AI applications. This upcoming project log will cover how I am chaining prompt architectures to build a responsive, context aware AI assistant that can dynamically generate D&D encounters and track party inventory.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                                    <i class="fa-solid fa-pen-ruler"></i> Drafting in Progress...
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Card: Facilities to AI (Aug 2026) -->
+                        <div class="w-full bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col hover:border-slate-750 transition-all shadow-lg" data-date="2026-08">
+                            <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+                                <span class="px-2.5 py-1 rounded-full bg-teal-950/60 border border-teal-900 text-teal-400 font-semibold uppercase">Operations & AI</span>
+                                <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> August 2026</span>
+                                <span class="text-slate-500"><i class="fa-regular fa-clock mr-1.5"></i> 4 min read</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-100 hover:text-teal-400 transition duration-150 mb-3">
+                                <a href="devlog-1.html">Why My Facilities Experience Fuels My Healthcare Vision</a>
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6 flex-grow">
+                                Reflecting on how operational auditing, strict data integrity constraints, and stakeholder management at Google office sites (CBRE) directly translate into designing dependable digital care systems. Discussing how database design modules at Birkbeck align with the secure SQLite/SQLCipher logging needs of our Care Companion.
+                            </p>
+                            <div class="mt-auto">
+                                <a href="devlog-1.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-teal-400 hover:text-teal-300 transition uppercase tracking-wider">
+                                    Read Full DevLog <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: EVIE (Red) -->
+                <div>
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4 border-b border-slate-800/50 pb-4">
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-100 flex items-center gap-2">
+                                <i class="fa-solid fa-heart-pulse text-red-500"></i> The Healthcare Companion - Evie
+                            </h2>
+                        </div>
+                        <!-- Sort Dropdown -->
+                        <select id="sort-evie" class="bg-[#0f172a] border border-slate-700 text-slate-300 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-red-900 cursor-pointer">
+                            <option value="desc">Newest First</option>
+                            <option value="asc">Oldest First</option>
+                        </select>
+                    </div>
+
+                    <!-- Cards Container -->
+                    <div id="evie-logs" class="space-y-6 flex flex-col">
+                        
+                        <!-- Card: Cyberdeck (Year 2 2027) -->
+                        <div class="w-full bg-[#0f172a] border border-rose-900/30 rounded-2xl p-6 sm:p-8 flex flex-col shadow-lg opacity-80" data-date="2027-06">
+                            <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+                                <span class="px-2.5 py-1 rounded-full bg-red-950/60 border border-red-900 text-red-400 font-semibold uppercase">Hardware & Field Ops</span>
+                                <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> Expected Year 2 (2027)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-300 mb-3">
+                                Prototyping The Evie Diagnostic Field Deck
+                            </h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                                A Year 2 hardware side project focused on building a custom, portable edge compute terminal. Curated with hardware privacy kill switches, encrypted token slots, and an Nvidia Jetson compute core, this field deck allows for offline model calibration and secure telemetry audits directly in patient homes.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                                    <i class="fa-solid fa-pen-ruler"></i> Drafting in Progress...
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Card: Edge LLM (Jan 2027) -->
+                        <div class="w-full bg-[#0f172a] border border-rose-900/30 rounded-2xl p-6 sm:p-8 flex flex-col shadow-lg opacity-80" data-date="2027-01">
+                            <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+                                <span class="px-2.5 py-1 rounded-full bg-red-950/60 border border-red-900 text-red-400 font-semibold uppercase">Edge AI & LLMs</span>
+                                <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> Expected Jan 2027</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-300 mb-3">
+                                Integrating Llama.cpp at the Edge
+                            </h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                                Exploring the feasibility of running a quantised 8 billion parameter LLM entirely offline. This log outlines how Evie will securely parse local physical activity markers and vocalise supportive wellness check ins without ever sending patient data to a cloud API.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                                    <i class="fa-solid fa-pen-ruler"></i> Drafting in Progress...
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Card: Face Blurring (Nov 2026) -->
+                        <div class="w-full bg-[#0f172a] border border-rose-900/30 rounded-2xl p-6 sm:p-8 flex flex-col shadow-lg opacity-80" data-date="2026-11">
+                            <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+                                <span class="px-2.5 py-1 rounded-full bg-red-950/60 border border-red-900 text-red-400 font-semibold uppercase">Companion Architecture</span>
+                                <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> Expected Nov 2026</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-300 mb-3">
+                                Real Time Face Blurring and In Memory Frame Purging
+                            </h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                                A detailed dive into Phase 1 of our Healthcare Companion specifications. Investigating how to run continuous local face blurring and 33 landmark coordinate extraction using MediaPipe on a Raspberry Pi 5. By purging raw frames from system memory instantly, we guarantee zero camera image leakage.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                                    <i class="fa-solid fa-pen-ruler"></i> Drafting in Progress...
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#070b12] py-8 border-t border-slate-900 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500">
+            <p>&copy; 2026 Ben Wright. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Sorting -->
+    <script>
+        function sortLogs(containerId, sortOrder) {
+            const container = document.getElementById(containerId);
+            const cards = Array.from(container.children);
+            
+            cards.sort((a, b) => {
+                const dateA = new Date(a.getAttribute('data-date'));
+                const dateB = new Date(b.getAttribute('data-date'));
+                return sortOrder === 'desc' ? dateB - dateA : dateA - dateB;
+            });
+            
+            cards.forEach(card => container.appendChild(card));
+        }
+
+        document.getElementById('sort-personal').addEventListener('change', (e) => sortLogs('personal-logs', e.target.value));
+        document.getElementById('sort-evie').addEventListener('change', (e) => sortLogs('evie-logs', e.target.value));
+    </script>
+</body>
+</html>
