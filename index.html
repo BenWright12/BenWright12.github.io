@@ -539,52 +539,164 @@
 
     <!-- DEVELOPMENT BLOG / DEVLOG SECTION -->
     <section id="blog" class="py-20 bg-slate-950/40 border-y border-slate-900">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-teal-400 font-bold tracking-widest text-xs uppercase block mb-2">JOURNAL OF PROGRESS</span>
-                <h2 class="text-3xl font-extrabold text-slate-100">Birkbeck & Companion DevLog</h2>
-                <div class="w-16 h-1 bg-gradient-to-r from-teal-500 to-emerald-500 mx-auto rounded-full mt-4 mb-6"></div>
+                <h2 class="text-3xl font-extrabold text-slate-100">Birkbeck & Companion DevLogs</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-teal-500 to-emerald-500 mx-auto rounded-full mt-4 mb-8"></div>
                 <p class="text-slate-400">
                     A space to reflect on computer vision theory, document MSc academic research, and post technical journals tracking the architecture of the Healthcare Companion.
                 </p>
             </div>
 
-            <div class="space-y-6">
-                <!-- Blog Entry 1 -->
-                <div class="bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-slate-750 transition-all shadow-lg">
-                    <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
-                        <span class="px-2.5 py-1 rounded-full bg-teal-950/60 border border-teal-900 text-teal-400 font-semibold uppercase">Operations & AI</span>
-                        <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> August 2026</span>
-                        <span class="text-slate-500"><i class="fa-regular fa-clock mr-1.5"></i> 4 min read</span>
+            <!-- EVIE - COMPANION DEVLOGS (Red Theme) -->
+            <div class="mb-16">
+                <div class="flex justify-between items-end mb-6 px-2">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-100 flex items-center gap-2">
+                            <i class="fa-solid fa-heart-pulse text-red-500"></i> The Healthcare Companion - Evie
+                        </h3>
+                        <p class="text-sm text-slate-400 mt-1">Technical architecture and edge AI research for The Evie Companion project.</p>
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-slate-100 hover:text-teal-400 transition duration-150 mb-3">
-                        <a href="devlogs/devlog-1.html">Why My Facilities Experience Fuels My Healthcare Vision</a>
-                    </h3>
-                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
-                        Reflecting on how operational auditing, strict data integrity constraints, and stakeholder management at Google office sites (CBRE) directly translate into designing dependable digital care systems. Discussing how database design modules at Birkbeck align with the secure SQLite/SQLCipher logging needs of our Care Companion.
-                    </p>
-                    <a href="devlogs/devlog-1.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-teal-400 hover:text-teal-300 transition uppercase tracking-wider">
-                        Read Full DevLog <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#companion" class="text-sm font-bold text-red-400 hover:text-red-300 transition whitespace-nowrap flex items-center gap-1.5 hidden sm:flex">
+                        See more <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
-
-                <!-- Blog Entry 2 (Drafting in progress) -->
-                <div class="bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 transition-all shadow-lg opacity-80">
-                    <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
-                        <span class="px-2.5 py-1 rounded-full bg-red-950/60 border border-red-900 text-red-400 font-semibold uppercase">Companion Architecture</span>
-                        <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> Expected in November 2026</span>
+                
+                <!-- Horizontal Scroll Container -->
+                <div class="flex overflow-x-auto pb-8 -mx-4 px-4 sm:mx-0 sm:px-2 gap-6 snap-x snap-mandatory" style="scrollbar-width: thin; scrollbar-color: #881337 transparent;">
+                    
+                    <!-- Card 1 (Evie - Existing Draft) -->
+                    <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[26rem] bg-[#0f172a] border border-rose-900/30 rounded-2xl p-6 sm:p-8 flex flex-col shadow-lg opacity-80">
+                        <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+                            <span class="px-2.5 py-1 rounded-full bg-red-950/60 border border-red-900 text-red-400 font-semibold uppercase">Companion Architecture</span>
+                            <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> Expected Nov 2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-300 mb-3">
+                            Real Time Face Blurring and In Memory Frame Purging
+                        </h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                            A detailed dive into Phase 1 of our Healthcare Companion specifications. Investigating how to run continuous local face blurring and 33 landmark coordinate extraction using MediaPipe on a Raspberry Pi 5. By purging raw frames from system memory instantly, we guarantee zero camera image leakage.
+                        </p>
+                        <div class="mt-auto">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                                <i class="fa-solid fa-pen-ruler"></i> Drafting in Progress...
+                            </span>
+                        </div>
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-slate-300 mb-3">
-                        Real Time Face Blurring and In Memory Frame Purging
-                    </h3>
-                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-4">
-                        A detailed dive into Phase 1 of our Healthcare Companion specifications. Investigating how to run continuous local face blurring and 33 landmark coordinate extraction using MediaPipe on a Raspberry Pi 5. By purging raw frames from system memory instantly, we guarantee zero camera image leakage.
-                    </p>
-                    <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
-                        Drafting in Progress...
-                    </span>
+
+                    <!-- Card 2 (Evie - New Draft) -->
+                    <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[26rem] bg-[#0f172a] border border-rose-900/30 rounded-2xl p-6 sm:p-8 flex flex-col shadow-lg opacity-80">
+                        <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+                            <span class="px-2.5 py-1 rounded-full bg-red-950/60 border border-red-900 text-red-400 font-semibold uppercase">Edge AI & LLMs</span>
+                            <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> Expected Jan 2027</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-300 mb-3">
+                            Integrating Llama.cpp at the Edge
+                        </h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                            Exploring the feasibility of running a quantised 8 billion parameter LLM entirely offline. This log outlines how Evie will securely parse local physical activity markers and vocalise supportive wellness check ins without ever sending patient data to a cloud API.
+                        </p>
+                        <div class="mt-auto">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                                <i class="fa-solid fa-pen-ruler"></i> Drafting in Progress...
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 (Evie - Cyberdeck Field Terminal) -->
+                    <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[26rem] bg-[#0f172a] border border-rose-900/30 rounded-2xl p-6 sm:p-8 flex flex-col shadow-lg opacity-80">
+                        <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+                            <span class="px-2.5 py-1 rounded-full bg-red-950/60 border border-red-900 text-red-400 font-semibold uppercase">Hardware & Field Ops</span>
+                            <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> Expected Year 2 (2027)</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-300 mb-3">
+                            Prototyping The Evie Diagnostic Field Deck
+                        </h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                            A Year 2 hardware side project focused on building a custom, portable edge compute terminal. Curated with hardware privacy kill switches, encrypted token slots, and an Nvidia Jetson compute core, this field deck allows for offline model calibration and secure telemetry audits directly in patient homes.
+                        </p>
+                        <div class="mt-auto">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                                <i class="fa-solid fa-pen-ruler"></i> Drafting in Progress...
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Mobile Only "See More" -->
+                <div class="sm:hidden text-right px-4 mt-2">
+                     <a href="#companion" class="text-sm font-bold text-red-400 hover:text-red-300 transition flex justify-end items-center gap-1.5">
+                        See more <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
+
+            <!-- GENERAL / PERSONAL DEVLOGS (Teal Theme) -->
+            <div>
+                <div class="flex justify-between items-end mb-6 px-2">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-100 flex items-center gap-2">
+                            <i class="fa-solid fa-code text-teal-400"></i> Personal & Academic Progression
+                        </h3>
+                        <p class="text-sm text-slate-400 mt-1">General development, Data Science concepts, and side projects.</p>
+                    </div>
+                    <a href="#blog" class="text-sm font-bold text-teal-400 hover:text-teal-300 transition whitespace-nowrap flex items-center gap-1.5 hidden sm:flex">
+                        See more <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Horizontal Scroll Container -->
+                <div class="flex overflow-x-auto pb-8 -mx-4 px-4 sm:mx-0 sm:px-2 gap-6 snap-x snap-mandatory" style="scrollbar-width: thin; scrollbar-color: #0f766e transparent;">
+                    
+                    <!-- Card 3 (General - Existing Post) -->
+                    <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[26rem] bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col hover:border-slate-750 transition-all shadow-lg">
+                        <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+                            <span class="px-2.5 py-1 rounded-full bg-teal-950/60 border border-teal-900 text-teal-400 font-semibold uppercase">Operations & AI</span>
+                            <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> August 2026</span>
+                            <span class="text-slate-500"><i class="fa-regular fa-clock mr-1.5"></i> 4 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-100 hover:text-teal-400 transition duration-150 mb-3">
+                            <a href="devlogs/devlog-1.html">Why My Facilities Experience Fuels My Healthcare Vision</a>
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 flex-grow">
+                            Reflecting on how operational auditing, strict data integrity constraints, and stakeholder management at Google office sites (CBRE) directly translate into designing dependable digital care systems. Discussing how database design modules at Birkbeck align with the secure SQLite/SQLCipher logging needs of our Care Companion.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="devlogs/devlog-1.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-teal-400 hover:text-teal-300 transition uppercase tracking-wider">
+                                Read Full DevLog <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 (General - New Draft DnD) -->
+                    <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[26rem] bg-[#0f172a] border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col shadow-lg opacity-80">
+                        <div class="flex flex-wrap items-center gap-3 mb-4 text-xs">
+                            <span class="px-2.5 py-1 rounded-full bg-teal-950/60 border border-teal-900 text-teal-400 font-semibold uppercase">Side Projects</span>
+                            <span class="text-slate-500"><i class="fa-regular fa-calendar-days mr-1.5"></i> Expected Oct 2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-300 mb-3">
+                            Integrating LLMs into Tabletop RPGs
+                        </h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                            Stepping away from healthcare for a moment to explore creative AI applications. This upcoming project log will cover how I am chaining prompt architectures to build a responsive, context aware AI assistant that can dynamically generate D&D encounters and track party inventory.
+                        </p>
+                        <div class="mt-auto">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                                <i class="fa-solid fa-pen-ruler"></i> Drafting in Progress...
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Mobile Only "See More" -->
+                <div class="sm:hidden text-right px-4 mt-2">
+                     <a href="#blog" class="text-sm font-bold text-teal-400 hover:text-teal-300 transition flex justify-end items-center gap-1.5">
+                        See more <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -653,7 +765,7 @@
         </div>
     </footer>
 
-    <!-- Simple JavaScript for Mobile Menu Toggle -->
+    <!-- Mobile Menu -->
     <script>
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
