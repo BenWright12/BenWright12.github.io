@@ -466,9 +466,9 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO PROJECTS SECTION -->
-    <section id="projects" class="py-20 bg-[#0b0f19]">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- PORTFOLIO PROJECTS SECTION -->
+    <section id="projects" class="py-20 bg-[#0b0f19] relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12">
                 <div>
                     <h2 class="text-3xl font-extrabold text-slate-100"><i class="fa-solid fa-cubes text-teal-400 mr-2"></i> Pinned Work & Repositories</h2>
@@ -479,93 +479,115 @@
                 </a>
             </div>
 
-            <!-- Horizontal Scroll Container -->
-            <div class="flex overflow-x-auto pb-8 -mx-4 px-4 sm:mx-0 sm:px-2 gap-6 snap-x snap-mandatory" style="scrollbar-width: thin; scrollbar-color: #0d9488 transparent;">
-                
-                <!-- Project 1: ai-systems -->
-                <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[28rem] md:w-[30rem] group bg-slate-900/60 hover:bg-[#0f172a] rounded-2xl border border-slate-800 hover:border-teal-500/30 transition-all duration-300 p-6 sm:p-8 shadow-xl hover:shadow-teal-500/5 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-bold font-mono text-slate-500 flex items-center gap-1.5">
-                                <i class="fa-solid fa-circle text-blue-400 text-[8px]"></i> PYTHON SYSTEM
-                            </span>
-                            <a href="https://github.com/BenWright12/ai-systems" target="_blank" class="text-slate-400 hover:text-teal-400 transition" title="ai-systems">
-                                <i class="fa-brands fa-github text-xl"></i>
-                            </a>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">
-                            <a href="https://github.com/BenWright12/ai-systems" target="_blank" class="group-hover:text-teal-400 no-underline hover:no-underline transition duration-150">ai-systems</a>
-                        </h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                            Autonomous agentic systems engineered for end-to-end data extraction, secure multi-stage pipeline management, and robust administrative audits.
-                        </p>
-                    </div>
-                    <div class="flex items-center justify-between border-t border-slate-850 pt-4 mt-4">
-                        <span class="text-xs font-semibold text-slate-500"><i class="fa-solid fa-code text-xs mr-1"></i> Python</span>
-                        <div class="flex gap-2">
-                            <span class="px-2 py-0.5 rounded bg-slate-850 text-[10px] text-slate-400 font-mono">Autonomous Agents</span>
-                            <span class="px-2 py-0.5 rounded bg-slate-850 text-[10px] text-slate-400 font-mono">Security</span>
-                        </div>
-                    </div>
-                </div>
+            <!-- Carousel Wrapper with Left/Right Edge Gradient Fades for Transparency Effect -->
+            <div class="relative">
+                <!-- Left Fade Overlay -->
+                <div class="absolute left-0 top-0 bottom-8 w-12 sm:w-24 bg-gradient-to-r from-[#0b0f19] to-transparent pointer-events-none z-10"></div>
+                <!-- Right Fade Overlay -->
+                <div class="absolute right-0 top-0 bottom-8 w-12 sm:w-24 bg-gradient-to-l from-[#0b0f19] to-transparent pointer-events-none z-10"></div>
 
-                <!-- Project 2: data-analytics -->
-                <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[28rem] md:w-[30rem] group bg-slate-900/60 hover:bg-[#0f172a] rounded-2xl border border-slate-800 hover:border-teal-500/30 transition-all duration-300 p-6 sm:p-8 shadow-xl hover:shadow-teal-500/5 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-bold font-mono text-slate-500 flex items-center gap-1.5">
-                                <i class="fa-solid fa-circle text-amber-500 text-[8px]"></i> JUPYTER NOTEBOOK
-                            </span>
-                            <a href="https://github.com/BenWright12/data-analytics" target="_blank" class="text-slate-400 hover:text-teal-400 transition" title="data-analytics">
-                                <i class="fa-brands fa-github text-xl"></i>
-                            </a>
+                <!-- Horizontal Scroll Container (Starts centered on Project 2 via script or layout) -->
+                <div id="project-carousel" class="flex overflow-x-auto pb-8 pt-4 px-[10vw] sm:px-[15vw] md:px-[20%]" style="scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; gap: 2rem;">
+                    
+                    <!-- Project 1: ai-systems -->
+                    <div class="snap-center flex-shrink-0 w-[75vw] sm:w-[26rem] md:w-[28rem] group bg-slate-900/60 hover:bg-[#0f172a] rounded-2xl border border-slate-800 hover:border-teal-500/30 transition-all duration-300 p-6 sm:p-8 shadow-xl flex flex-col justify-between opacity-60 hover:opacity-100 scale-95 hover:scale-100">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-xs font-bold font-mono text-slate-500 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-circle text-blue-400 text-[8px]"></i> PYTHON SYSTEM
+                                </span>
+                                <a href="https://github.com/BenWright12/ai-systems" target="_blank" class="text-slate-400 hover:text-teal-400 transition" title="ai-systems">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">
+                                <a href="https://github.com/BenWright12/ai-systems" target="_blank" class="group-hover:text-teal-400 no-underline hover:no-underline transition duration-150">ai-systems</a>
+                            </h3>
+                            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                                Autonomous agentic systems engineered for end-to-end data extraction, secure multi-stage pipeline management, and robust administrative audits.
+                            </p>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">
-                            <a href="https://github.com/BenWright12/data-analytics" target="_blank" class="group-hover:text-teal-400 no-underline hover:no-underline transition duration-150">data-analytics</a>
-                        </h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                            A collection of data analytics projects including Exploratory Data Analyses (EDAs), calculated metrics, and interactive analytics tracking dashboards.
-                        </p>
-                    </div>
-                    <div class="flex items-center justify-between border-t border-slate-850 pt-4 mt-4">
-                        <span class="text-xs font-semibold text-slate-500"><i class="fa-solid fa-chart-bar text-xs mr-1"></i> Jupyter Notebook</span>
-                        <div class="flex gap-2">
-                            <span class="px-2 py-0.5 rounded bg-slate-850 text-[10px] text-slate-400 font-mono">EDA</span>
-                            <span class="px-2 py-0.5 rounded bg-slate-850 text-[10px] text-slate-400 font-mono">Dashboards</span>
+                        <div class="flex items-center justify-between border-t border-slate-850 pt-4 mt-4">
+                            <span class="text-xs font-semibold text-slate-500"><i class="fa-solid fa-code text-xs mr-1"></i> Python</span>
+                            <div class="flex gap-2">
+                                <span class="px-2 py-0.5 rounded bg-slate-850 text-[10px] text-slate-400 font-mono">Autonomous Agents</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-850 text-[10px] text-slate-400 font-mono">Security</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Project 3: python-labs -->
-                <div class="snap-start flex-shrink-0 w-[85vw] sm:w-[28rem] md:w-[30rem] group bg-slate-900/60 hover:bg-[#0f172a] rounded-2xl border border-slate-800 hover:border-teal-500/30 transition-all duration-300 p-6 sm:p-8 shadow-xl hover:shadow-teal-500/5 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-bold font-mono text-slate-500 flex items-center gap-1.5">
-                                <i class="fa-solid fa-circle text-blue-400 text-[8px]"></i> PYTHON SANDBOX
-                            </span>
-                            <a href="https://github.com/BenWright12/python-labs" target="_blank" class="text-slate-400 hover:text-teal-400 transition" title="python-labs">
-                                <i class="fa-brands fa-github text-xl"></i>
-                            </a>
+                    <!-- Project 2: data-analytics (Middle Default Focus) -->
+                    <div class="snap-center flex-shrink-0 w-[75vw] sm:w-[26rem] md:w-[28rem] group bg-slate-900/90 hover:bg-[#0f172a] rounded-2xl border border-teal-500/40 hover:border-teal-500/60 transition-all duration-300 p-6 sm:p-8 shadow-2xl shadow-teal-500/10 flex flex-col justify-between opacity-100 scale-100">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-xs font-bold font-mono text-slate-500 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-circle text-amber-500 text-[8px]"></i> JUPYTER NOTEBOOK
+                                </span>
+                                <a href="https://github.com/BenWright12/data-analytics" target="_blank" class="text-slate-400 hover:text-teal-400 transition" title="data-analytics">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">
+                                <a href="https://github.com/BenWright12/data-analytics" target="_blank" class="group-hover:text-teal-400 no-underline hover:no-underline transition duration-150">data-analytics</a>
+                            </h3>
+                            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                                A collection of data analytics projects including Exploratory Data Analyses (EDAs), calculated metrics, and interactive analytics tracking dashboards.
+                            </p>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">
-                            <a href="https://github.com/BenWright12/python-labs" target="_blank" class="group-hover:text-teal-400 no-underline hover:no-underline transition duration-150">python-labs</a>
-                        </h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                            A dedicated software engineering sandbox featuring custom game logic, strict state management systems, and text based terminal user interfaces (CLI).
-                        </p>
-                    </div>
-                    <div class="flex items-center justify-between border-t border-slate-850 pt-4 mt-4">
-                        <span class="text-xs font-semibold text-slate-500"><i class="fa-solid fa-code text-xs mr-1"></i> Python</span>
-                        <div class="flex gap-2">
-                            <span class="px-2 py-0.5 rounded bg-slate-850 text-[10px] text-slate-400 font-mono">CLI UIs</span>
-                            <span class="px-2 py-0.5 rounded bg-slate-850 text-[10px] text-slate-400 font-mono">Logic & State</span>
+                        <div class="flex items-center justify-between border-t border-slate-850 pt-4 mt-4">
+                            <span class="text-xs font-semibold text-slate-500"><i class="fa-solid fa-chart-bar text-xs mr-1"></i> Jupyter Notebook</span>
+                            <div class="flex gap-2">
+                                <span class="px-2 py-0.5 rounded bg-slate-850 text-[10px] text-slate-400 font-mono">EDA</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-850 text-[10px] text-slate-400 font-mono">Dashboards</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                    <!-- Project 3: python-labs -->
+                    <div class="snap-center flex-shrink-0 w-[75vw] sm:w-[26rem] md:w-[28rem] group bg-slate-900/60 hover:bg-[#0f172a] rounded-2xl border border-slate-800 hover:border-teal-500/30 transition-all duration-300 p-6 sm:p-8 shadow-xl flex flex-col justify-between opacity-60 hover:opacity-100 scale-95 hover:scale-100">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-xs font-bold font-mono text-slate-500 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-circle text-blue-400 text-[8px]"></i> PYTHON SANDBOX
+                                </span>
+                                <a href="https://github.com/BenWright12/python-labs" target="_blank" class="text-slate-400 hover:text-teal-400 transition" title="python-labs">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">
+                                <a href="https://github.com/BenWright12/python-labs" target="_blank" class="group-hover:text-teal-400 no-underline hover:no-underline transition duration-150">python-labs</a>
+                            </h3>
+                            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                                A dedicated software engineering sandbox featuring custom game logic, strict state management systems, and text based terminal user interfaces (CLI).
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-slate-850 pt-4 mt-4">
+                            <span class="text-xs font-semibold text-slate-500"><i class="fa-solid fa-code text-xs mr-1"></i> Python</span>
+                            <div class="flex gap-2">
+                                <span class="px-2 py-0.5 rounded bg-slate-850 text-[10px] text-slate-400 font-mono">CLI UIs</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-850 text-[10px] text-slate-400 font-mono">Logic & State</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Auto-scroll script to start precisely on the middle project -->
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.getElementById('project-carousel');
+            if (carousel) {
+                // Instantly scroll to center the second item on load
+                const secondCard = carousel.children[1];
+                if (secondCard) {
+                    carousel.scrollLeft = secondCard.offsetLeft - (carousel.clientWidth - secondCard.clientWidth) / 2;
+                }
+            }
+        });
+    </script>
 
     <!-- DEVELOPMENT BLOG / DEVLOG SECTION -->
     <section id="blog" class="py-20 bg-slate-950/40 border-y border-slate-900 relative overflow-hidden">
